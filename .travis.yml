@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "node"
+before_script:
+  - npm install
+script:
+  - npm run build
+  - wget -O cloudflare-worker-deployer https://github.com/ao-com/cloudflare-worker-deployer/releases/download/v0.9.0/cloudflare-worker-deployer-v0.9.0-linux-amd64
